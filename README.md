@@ -1,6 +1,6 @@
 # Graph Visualizer
 
-[![npm version](https://badge.fury.io/js/graph-visualizer.svg)](https://badge.fury.io/js/graph-visualizer)
+[![npm version](https://badge.fury.io/js/graph-data-structure-visualizer.svg)](https://badge.fury.io/js/graph-data-structure-visualizer)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Rohan9900/graph-datastructure-visualizer/blob/main/LICENSE)
 
 Graph Visualizer is a React component that allows you to visualize graph-based data structures with ease. It provides an interactive and customizable canvas for rendering network graphs, trees, and other complex data structures.
@@ -19,7 +19,7 @@ Import the `GraphVisualizer` component and use it in your React application:
 
 ```jsx
 import React from "react";
-import { GraphVisualizer } from "graph-visualizer";
+import { GraphVisualizer } from "graph-data-structure-visualizer";
 
 const MyComponent = () => {
   const data = {
