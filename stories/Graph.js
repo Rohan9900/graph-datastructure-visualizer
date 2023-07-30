@@ -27,6 +27,13 @@ export function GraphVisualizer({
     /*                 creating a canvas of some height and width                 */
     /* -------------------------------------------------------------------------- */
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+    const centerX = 0;
+    const centerY = ctx.canvas.height / 2;
+
+    // Translate the canvas content to center the X and Y axes
+    ctx.translate(centerX, centerY);
+
     let pos = {};
     let connections = {};
     let visited = {};
@@ -34,10 +41,11 @@ export function GraphVisualizer({
     /* -------------------------------------------------------------------------- */
     /*                          recursing graph with dfs                          */
     /* -------------------------------------------------------------------------- */
-    recurseGraph(visited, startingPoint, 100, 150, ctx, pos, connections);
+    recurseGraph(visited, startingPoint, 100, 0, ctx, pos, connections, canvas);
+
   }, [isChange]);
 
-  const recurseGraph = (vis, node, x, y, ctx, pos, connections) => {
+  const recurseGraph = (vis, node, x, y, ctx, pos, connections, canvas) => {
     if (!vis[node]) {
       const width = 100; // Rectangle width
       const height = 30; // Rectangle height
@@ -74,7 +82,7 @@ export function GraphVisualizer({
           connections[`${node}-${neighbor}`] = true;
         }
 
-        recurseGraph(vis, neighbor, newX, newY, ctx, pos, connections);
+        recurseGraph(vis, neighbor, newX, newY, ctx, pos, connections, canvas);
         yOffset += 100;
       }
     }
