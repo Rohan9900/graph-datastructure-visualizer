@@ -1,7 +1,7 @@
 # Graph Visualizer
 
 [![npm version](https://badge.fury.io/js/graph-visualizer.svg)](https://badge.fury.io/js/graph-visualizer)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/your-repo-name/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Rohan9900/graph-datastructure-visualizer/LICENSE)
 
 Graph Visualizer is a React component that allows you to visualize graph-based data structures with ease. It provides an interactive and customizable canvas for rendering network graphs, trees, and other complex data structures.
 
@@ -10,7 +10,7 @@ Graph Visualizer is a React component that allows you to visualize graph-based d
 You can install Graph Visualizer from npm:
 
 ```bash
-npm install graph-visualizer
+npm i graph-data-structure-visualizer
 ```
 
 ## Usage
@@ -40,6 +40,7 @@ const MyComponent = () => {
         startingPoint="A"
         mainHeight={600}
         mainWidth={800}
+        isChange={false}
       />
     </div>
   );
@@ -52,7 +53,7 @@ export default MyComponent;
 
 - `canvasRef`: A ref for the canvas element. (Optional)
 - `data`: An object representing the graph data structure. (Required)
-- `isChange`: A boolean flag to trigger graph visualization updates. (Optional)
+- `isChange`: A boolean flag to trigger graph visualization updates. (Required)
 - `startingPoint`: The starting node for the graph traversal. (Required)
 - `textColor`: The color of the node labels. (Optional, default: "black")
 - `mainHeight`: The height of the canvas. (Optional, default: 400)
@@ -60,7 +61,7 @@ export default MyComponent;
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/your-username/your-repo-name/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Rohan9900/graph-datastructure-visualizer/LICENSE) file for details.
 
 ## Contributing
 
@@ -68,8 +69,6 @@ Contributions are welcome! Please feel free to open issues or submit pull reques
 
 ## Credits
 
-Graph Visualizer was developed by [Your Name](https://github.com/your-username).
+Graph Visualizer was developed by [Rohan Bindal](https://github.com/Rohan9900).
 
 ---
-
-Modify the placeholders with the appropriate information, such as npm package name, repository URL, and your name. Don't forget to add relevant sections like installation instructions, usage examples, and contribution guidelines. You can also include more detailed explanations about the props and their usage in the component. Make sure to customize the readme according to your specific project and its features.
