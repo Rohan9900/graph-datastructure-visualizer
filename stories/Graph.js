@@ -28,11 +28,7 @@ export function GraphVisualizer({
     /* -------------------------------------------------------------------------- */
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
-    const centerX = 0;
-    const centerY = ctx.canvas.height / 2;
-
-    // Translate the canvas content to center the X and Y axes
-    ctx.translate(centerX, centerY);
+  
 
     let pos = {};
     let connections = {};
@@ -41,7 +37,7 @@ export function GraphVisualizer({
     /* -------------------------------------------------------------------------- */
     /*                          recursing graph with dfs                          */
     /* -------------------------------------------------------------------------- */
-    recurseGraph(visited, startingPoint, 100, 0, ctx, pos, connections, canvas);
+    recurseGraph(visited, startingPoint, 100, 300, ctx, pos, connections, canvas);
 
   }, [isChange]);
 

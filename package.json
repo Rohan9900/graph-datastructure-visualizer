@@ -1,6 +1,6 @@
 {
   "name": "graph-data-structure-visualizer",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Graph Data Structure Visualizer is a comprehensive React library that enables you to effortlessly create dynamic visualizations for graph-based data structures. Whether you're working with network graphs, trees, or any other complex data, this library provides intuitive components to showcase your data in an engaging and interactive way.",
   "main": "dist/index.js",
   "type": "module",
