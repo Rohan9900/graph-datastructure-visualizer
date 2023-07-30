@@ -52,7 +52,7 @@ export function GraphVisualizer({
 
       vis[node] = true;
       const neighbors = data[node];
-      const neighborCount = neighbors?.length;
+      const neighborCount = neighbors.length;
       let yOffset = -(neighborCount - 1) * 50;
 
       for (let i = 0; i < neighborCount; i++) {
@@ -64,13 +64,13 @@ export function GraphVisualizer({
           !connections[`${node}-${neighbor}`] &&
           !connections[`${neighbor}-${node}`]
         ) {
-          ctx?.beginPath();
-          ctx?.moveTo(x + width / 2, y);
-          ctx?.lineTo(
+          ctx.beginPath();
+          ctx.moveTo(x + width / 2, y);
+          ctx.lineTo(
             pos[neighbor] ? pos[neighbor].x - width / 2 : newX - width / 2,
             pos[neighbor] ? pos[neighbor].y : newY
           );
-          ctx?.stroke();
+          ctx.stroke();
           connections[`${node}-${neighbor}`] = true;
         }
 
