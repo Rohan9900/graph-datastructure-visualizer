@@ -51,13 +51,16 @@ export default MyComponent;
 
 ## Props
 
-- `canvasRef`: A ref for the canvas element. (Optional)
-- `data`: An object representing the graph data structure. (Required)
-- `isChange`: A boolean flag to trigger graph visualization updates. (Required)
-- `startingPoint`: The starting node for the graph traversal. (Required)
-- `textColor`: The color of the node labels. (Optional, default: "black")
-- `mainHeight`: The height of the canvas. (Optional, default: 400)
-- `mainWidth`: The width of the canvas. (Optional, default: 500)
+- canvasRef (Optional): A ref for the canvas element.
+- data (Required): An object representing the graph data structure.
+- isChange (Required): A boolean flag to trigger graph visualization updates.
+- startingPoint (Required): The starting node for the graph traversal.
+- textColor (Optional): The color of the node labels. (Default: "black")
+- mainHeight (Optional): The height of the canvas. (Default: 400)
+- mainWidth (Optional): The width of the canvas. (Default: 500)
+- nodeShape (Optional): The shape of the nodes. Can be "circle" or "rectangle". (Default: "rectangle")
+- gapBetweenNodes (Optional): The gap between nodes in the same layer. (Default: 1.5)
+
 
 ## License
 
